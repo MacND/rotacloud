@@ -1,0 +1,27 @@
+{
+  "name": "rotacloud",
+  "version": "0.1.0",
+  "description": "NodeJS async wrapper for the RotaCloud API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacND/rotacloud.git"
+  },
+  "keywords": [
+    "rotacloud",
+    "axios",
+    "api"
+  ],
+  "author": "Jonathan Linn <npmjs@voluspa.app> (https://github.com/MacND)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/MacND/rotacloud/issues"
+  },
+  "homepage": "https://github.com/MacND/rotacloud#readme",
+  "dependencies": {
+    "axios": "^0.19.1"
+  }
+}

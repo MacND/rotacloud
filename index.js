@@ -15,7 +15,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + '/accounts', {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -29,7 +29,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -40,7 +40,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/attendance/${attendanceId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -52,7 +52,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -64,7 +64,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -76,7 +76,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -90,7 +90,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -102,7 +102,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -116,7 +116,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -130,7 +130,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -141,7 +141,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/availability_patterns/${availabilityPatternId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -153,7 +153,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -165,7 +165,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -176,7 +176,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/availability_patterns/${availabilityPatternId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -190,7 +190,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -201,7 +201,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/day_notes/${dayNoteId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -213,7 +213,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -225,7 +225,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -236,7 +236,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/day_notes/${dayNoteId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -250,7 +250,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -262,7 +262,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -274,7 +274,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -288,7 +288,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -299,7 +299,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/days_off_patterns/${daysOffPatternId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -311,7 +311,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -323,7 +323,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -334,7 +334,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/days_off_patterns/${daysOffPatternId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -347,7 +347,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + '/groups', {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -359,7 +359,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -371,7 +371,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -383,7 +383,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -394,7 +394,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/groups/${groupId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -407,7 +407,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/holiday_allowances/${year}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -418,7 +418,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/holiday_allowances/${year}/${userId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -432,7 +432,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -444,7 +444,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -455,7 +455,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/holiday_allowances_custom/${year}/${userId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -469,7 +469,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -480,7 +480,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/leave/${leaveId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -492,7 +492,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -504,7 +504,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -515,7 +515,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/leave/${leaveId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -529,7 +529,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -540,7 +540,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/leave_embargoes/${leaveEmbargoeId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -552,7 +552,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -564,7 +564,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -575,7 +575,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/leave_embargoes/${leaveEmbargoeId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -589,7 +589,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -600,7 +600,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/leave_requests/${leaveRequestId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -612,7 +612,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -624,7 +624,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -635,7 +635,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/leave_requests/${leaveRequestId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -648,7 +648,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + '/leave_types', {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -662,7 +662,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -673,7 +673,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/locations/${locationId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -685,7 +685,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -697,7 +697,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -708,7 +708,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/locations/${locationId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -721,7 +721,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + '/me', {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -735,7 +735,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -746,7 +746,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/pay_periods/${payPeriodId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -757,7 +757,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/pay_periods/${payPeriodId}/payroll`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -770,7 +770,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/pins/${pin}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -784,7 +784,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -795,7 +795,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/roles/${roleId}`, {
           headers: headers,
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -807,7 +807,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -819,7 +819,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -830,7 +830,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/roles/${roleId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -843,7 +843,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + '/settings', {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -857,7 +857,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -868,7 +868,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/shifts/${shiftId}`, {
           headers: headers,
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -880,7 +880,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -892,7 +892,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -903,7 +903,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/shifts/${shiftId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -917,7 +917,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -931,7 +931,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -943,7 +943,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -957,7 +957,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -968,7 +968,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/swap_requests/${swapRequestId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -980,7 +980,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -992,7 +992,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1003,7 +1003,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/swap_requests/${swapRequestId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1016,7 +1016,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + '/terminals', {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1027,7 +1027,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/terminals/${terminalId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1039,7 +1039,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1051,7 +1051,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1064,7 +1064,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + '/terminals_active', {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1076,7 +1076,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1088,7 +1088,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1099,7 +1099,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/terminals_active/${terminalId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1112,7 +1112,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + '/timezones', {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1123,7 +1123,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/timezones/${timezoneId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1137,7 +1137,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1148,7 +1148,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/unavailability_requests/${unavailabilityRequestId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1160,7 +1160,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1172,7 +1172,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1183,7 +1183,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/unavailability_requests/${unavailabilityRequestId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1197,7 +1197,7 @@ module.exports = ({
           headers: headers,
           params: params
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1208,7 +1208,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/users/${userId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1220,7 +1220,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1231,7 +1231,7 @@ module.exports = ({
         let response = await axios.delete(rotacloud_api_url + `/users/${userId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1244,7 +1244,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + '/users_clocked_in', {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1255,7 +1255,7 @@ module.exports = ({
         let response = await axios.get(rotacloud_api_url + `/users_clocked_in/${userId}`, {
           headers: headers
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err)
       }
@@ -1267,7 +1267,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1279,7 +1279,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }
@@ -1291,7 +1291,7 @@ module.exports = ({
           headers: headers,
           data: data
         });
-        return response;
+        return response.data;
       } catch (err) {
         throw new Error(err);
       }

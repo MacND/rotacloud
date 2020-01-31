@@ -1,13 +1,47 @@
-# rotacloud
-A NodeJS module for interacting with the RotaCloud API.  Please refer to https://rotacloud.docs.apiary.io/ for the full spec.
+# Welcome to rotacloud-wrapper 👋
+![Version](https://img.shields.io/badge/version-0.1.1-blue.svg?cacheSeconds=2592000)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/MacND/rotacloud#readme)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/MacND/rotacloud/graphs/commit-activity)
+[![License: WTFPL](https://img.shields.io/github/license/MacND/rotacloud-wrapper)](https://github.com/MacND/rotacloud/blob/master/LICENSE)
 
-The majority of calls correspond to appropriate HTTP verbs (GET/POST/PATCH etc.), but for clarity/brevity some methods have been renamed in this module.
+> Unofficial NodeJS async wrapper for the RotaCloud API
 
-## Changes from Apiary docs
-Any endpoint that allows you to GET multiple records (list) will have a method called `list`, along with a `get` method for retrieving individual records.
+### 🏠 [Homepage](https://github.com/MacND/rotacloud-wrapper#readme)
 
-Approving and Denying for `leave_requests`, `swap_requests`, and `unavailability_requests` is done via a method called `respond`, and passing the appropriate values in the `data` (body) object.
+## Install
 
-Making `leave_requests`, `swap_requests`, and `unavailability_requests` is done by using the `request` method of that endpoint.
+```sh
+npm install
+```
 
-For `users_clocked_in`, use the `break` method to start and stop a user's break by passing the appropriate values in the `data` (body) object..
+## Run tests
+
+```sh
+npm run test
+```
+
+## Author
+
+👤 **Jonathan Linn <npmjs@voluspa.app> (https://github.com/MacND)**
+
+* Github: [@MacND](https://github.com/MacND)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page](https://github.com/MacND/rotacloud-wrapper#/issues). You can also take a look at the [contributing guide](https://github.com/MacND/rotacloud/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+
+## 📝 License
+
+Copyright © 2020 [Jonathan Linn <npmjs@voluspa.app> (https://github.com/MacND)](https://github.com/MacND).
+
+This project is [WTFPL](https://github.com/MacND/rotacloud/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
